@@ -47,10 +47,10 @@ async function newTxQuery() {
     txHash: "0x5a295694f62adf27f617e1d8d2e0e74e8f6c2464b7b7d86fadd2ac7548e8dede",
     field: TransactionField.Data,
   });
-  // await qb.appendReceiptQuery({
-  //   txHash: "0x5a295694f62adf27f617e1d8d2e0e74e8f6c2464b7b7d86fadd2ac7548e8dede",
-  //   field: ReceiptField.Status,
-  // });
+  await qb.appendReceiptQuery({
+    txHash: "0x5a295694f62adf27f617e1d8d2e0e74e8f6c2464b7b7d86fadd2ac7548e8dede",
+    field: ReceiptField.Status,
+  });
   await qb.appendReceiptQuery({
     txHash: "0x5a295694f62adf27f617e1d8d2e0e74e8f6c2464b7b7d86fadd2ac7548e8dede",
     field: ReceiptField.CumulativeGas,
