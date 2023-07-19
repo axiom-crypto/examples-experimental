@@ -75,7 +75,6 @@ async function fulfilledHandler(queryType: number, keccakQueryResponse: string, 
   const keccakReceiptResponse = responseTree.receipt.tree.getHexRoot();
   const txData = responseTree.tx.data;
   const receiptData = responseTree.receipt.data;
-  responseTree.tx.data
 
   console.log("keccakTxResponse", keccakTxResponse);
   console.log("keccakReceiptResponse", keccakReceiptResponse);
